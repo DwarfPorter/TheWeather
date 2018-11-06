@@ -12,76 +12,73 @@
         android:layout_height="wrap_content"
         android:text="@string/TheWeather"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.032" />
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_bias="0.1"/>
 
-    <TextView
-        android:id="@+id/textTemperature"
+
+    <GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:text="Температура"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle">
 
-    <TextView
-        android:id="@+id/textValueTemperature"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="8dp"
-        android:text="20"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/textTemperature"
-        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+        <TextView
+            android:id="@+id/textTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Температура"
+            android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/textPreassure"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Давление"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textTemperature" />
+        <TextView
+            android:id="@+id/textValueTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="20"
+            android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/textValuePreassure"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="16dp"
-        android:text="760"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/textPreassure"
-        app:layout_constraintTop_toBottomOf="@+id/textValueTemperature" />
+        <TextView
+            android:id="@+id/textPreassure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Давление"
+            android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/textHumidity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Влажность"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textPreassure" />
+        <TextView
+            android:id="@+id/textValuePreassure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="760"
+            android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/textValueHumidity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="24dp"
-        android:text="50"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/textHumidity"
-        app:layout_constraintTop_toBottomOf="@+id/textValuePreassure" />
+        <TextView
+            android:id="@+id/textHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Влажность"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textValueHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="50"
+            android:textSize="20sp" />
+    </GridLayout>
+
+
 
 </android.support.constraint.ConstraintLayout>
