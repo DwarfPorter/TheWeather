@@ -1,4 +1,9 @@
 <resources>
-    <string name="app_name">TheWeather</string>
+    <string name="app_name">Погода</string>
     <string name="TheWeather">Погода</string>
+    <string name="city">Город</string>
+    <string name="changeCity">Сменить город</string>
+    <string name="temperature">Температура</string>
+    <string name="pressure">Давление</string>
+    <string name="humidity">Влажность</string>
 </resources>

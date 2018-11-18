@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TheWeather</string>
+    <string name="TheWeather">The weather</string>
+    <string name="city">City</string>
+    <string name="changeCity">Change city</string>
+    <string name="temperature">Temperature</string>
+    <string name="pressure">Pressure</string>
+    <string name="humidity">Humidity</string>
+</resources>

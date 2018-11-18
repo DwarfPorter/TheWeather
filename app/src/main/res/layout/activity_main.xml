@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/TheWeather"
-        android:textSize="30sp"
+        android:textSize="@dimen/size30"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -37,15 +37,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="10"
-            android:text="Город"
-            android:textSize="20sp" />
+            android:text="@string/city"
+            android:textSize="@dimen/size20" />
 
         <Button
             android:id="@+id/buttonCity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Сменить город" />
+            android:text="@string/changeCity" />
     </LinearLayout>
 
     <GridLayout
@@ -64,8 +64,8 @@
             android:id="@+id/textTemperature"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Температура"
-            android:textSize="20sp" />
+            android:text="@string/temperature"
+            android:textSize="@dimen/size20" />
 
         <TextView
             android:id="@+id/textValueTemperature"
@@ -73,13 +73,13 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:text="20"
-            android:textSize="20sp" />
+            android:textSize="@dimen/size20" />
 
         <TextView
             android:id="@+id/textPreassure"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Давление"
+            android:text="@string/pressure"
             android:textSize="20sp" />
 
         <TextView
@@ -88,14 +88,14 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:text="760"
-            android:textSize="20sp" />
+            android:textSize="@dimen/size20" />
 
         <TextView
             android:id="@+id/textHumidity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Влажность"
-            android:textSize="20sp" />
+            android:text="@string/humidity"
+            android:textSize="@dimen/size20" />
 
         <TextView
             android:id="@+id/textValueHumidity"
@@ -103,7 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:text="50"
-            android:textSize="20sp" />
+            android:textSize="@dimen/size20" />
     </GridLayout>
 
 
