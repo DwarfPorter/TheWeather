@@ -2,6 +2,8 @@ package ru.geekbrains.theweather;
 
 import android.content.Intent;
 import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,12 +19,29 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        if (fragmentManager.findFragmentById(R.id.fragmentValue) == null){
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            ValueFragment valueFragment = ValueFragment.newInstance(new Parcel(20,760,50));
+            fragmentTransaction.add(R.id.fragmentValue, valueFragment);
+            fragmentTransaction.commit();
+        }
+
         Button chooserCity = findViewById(R.id.buttonCity);
         chooserCity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intentChooseCity = new Intent(getApplicationContext(), ChooserCityActivity.class);
                 startActivityForResult(intentChooseCity, ChooseActivity);
+            }
+        });
+
+        Button forecast = findViewById(R.id.buttonForecast);
+        forecast.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentForecast = new Intent(getApplicationContext(), ForecastActivity.class);
+                startActivity(intentForecast);
             }
         });
     }

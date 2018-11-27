@@ -6,4 +6,8 @@
     <string name="temperature">Температура</string>
     <string name="pressure">Давление</string>
     <string name="humidity">Влажность</string>
+    <string name="Today">Сегодня</string>
+    <string name="Tomorrow">Завтра</string>
+    <string name="AfterTomorrow">Послезавтра</string>
+    <string name="Forecast">Прогноз</string>
 </resources>

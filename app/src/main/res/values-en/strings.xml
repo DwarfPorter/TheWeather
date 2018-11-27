@@ -7,4 +7,8 @@
     <string name="temperature">Temperature</string>
     <string name="pressure">Pressure</string>
     <string name="humidity">Humidity</string>
+    <string name="Today">Today</string>
+    <string name="Tomorrow">Tomorrow</string>
+    <string name="AfterTomorrow">After tomorrow</string>
+    <string name="Forecast">Forecast</string>
 </resources>
