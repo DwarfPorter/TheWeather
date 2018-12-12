@@ -7,28 +7,8 @@
     android:orientation="vertical"
     tools:context=".ChooserCityActivity">
 
-    <TextView
-        android:id="@+id/txtMsk"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chooserCity"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Москва"
-        android:textSize="42sp" />
-
-    <TextView
-        android:id="@+id/txtSpb"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Санкт-Петербург"
-        android:textSize="42sp" />
-
-    <TextView
-        android:id="@+id/txtNsb"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Новосибирск"
-        android:textSize="42sp" />
-
+        android:layout_height="match_parent" />
 </LinearLayout>
